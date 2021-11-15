@@ -1,0 +1,21 @@
+body{
+    background-color: #fff;
+}
+
+h1{
+    color: cornflowerblue;
+    font-family: verdana;
+    font-size: 300%;
+}
+
+p{
+    color: blueviolet;
+    font-family: courier;
+    font-size: 160%;
+    border: 5px solid powderblue;
+    /* padding : border와 font의 간격을 띄워라. 
+    텍스트와 테두리 사이의 공백을 정의*/
+    padding : 30px;
+    margin: 0px;
+}
+/* 외부방식 */
