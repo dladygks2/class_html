@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* table : 표를 만드는 태그 */
+        table {
+            background-color: pink;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        th,
+        td {
+            /* 작은 네모 안의 색상 맞추는거 */
+            background-color: beige;
+            border: 1px solid #444;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- tr: 하나의 행
+            td: 하나의 열 -->
+
+    <!-- <table>
+         
+        <tr>
+            <td>섹션1</td>
+            <td>섹션2</td>
+        </tr>
+        <tr>
+            <td>섹션3</td>
+            <td>섹션4</td>
+        </tr>
+    </table> -->
+
+
+    <!-- thead : 제목, table 상단 -->
+    <!-- tbody : 실제 내용 -->
+
+    <!-- <table>
+        
+        <thead>
+            <tr>
+                <th>학교</th>
+                <th>창립연도</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>서울대학교</td>
+                <td>1946</td>
+            </tr>
+            <tr>
+                <td>고려대학교</td>
+                <td>1905</td>
+            </tr>
+            <tr>
+                <td>연세대학교</td>
+                <td>1885</td>
+            </tr>
+        </tbody>
+    </table> -->
+
+
+    <!-- <table>
+        <thead>
+            <tr>
+                <th>상단 메뉴</th>
+                <th>어떤 걸 넣지</th>
+                <th>3 by 3은 하라는데</th>
+                <th>그냥 th하나 더 추가해도 되는가?</th>
+                 th하면 쫌 진해지는 듯 
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>첫번째 칸인가</td>
+                <td>얘는 둘째 칸??</td>
+                <td>3 by 3 하라했지</td>
+                <td>되는거 같네 </td>
+            </tr>
+
+            <tr>
+                <td>tbody에 하나 더 만들어야하나</td>
+                <td>맞게 하는건가</td>
+                <td>이거 위에 style에서 가운데 정렬 하란다.</td>
+                <td>표 저거 어떻게 만든건가...</td>
+            </tr>
+        </tbody>
+
+    </table> -->
+
+
+    <!-- 
+        열은 좌우로 확장합니다.
+        행은 상하로 확장합니다.
+     -->
+
+    <table>
+        <tr>
+            <!-- colspan : 열을 확장 -->
+            <td colspan="2">2X1 셀</td>
+        </tr>
+        <!-- colspan : 셀 병합 기능... -->
+        <tr>
+            <td>1 X 1 셀</td>
+            <td>1 X 1 셀</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table>
+        <tr>
+            <!-- rowspan :  행을 확장 -->
+            <td rowspan="2">1 X 2 셀</td>
+            <td>1 X 1 셀</td>
+        </tr>
+        <tr>
+            <td>1 X 1 셀</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <table>
+        <tr>
+            <td colspan="4">길다랗게 한줄 </td>
+        </tr>
+        <tr>
+            <td style="background: ;>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </table>
+</body>
+
+</html>

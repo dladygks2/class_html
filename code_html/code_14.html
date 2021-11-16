@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 20px;
+            background-color: red;
+        }
+
+        .container {
+            background-color: yellow;
+            left: 20px;
+            top: 20px;
+            /* position : relative 
+            기본값은 static : 자연스럽게
+            relative : 상대적 위치에따라?? */
+            /* position: static; */
+            position: relative;
+
+        }
+
+        .box {
+            background-color: blue;
+            left: 20px;
+            top: 20px;
+            /* position 변경 */
+            /* static 은 원래 있어야하는 자리에 존재한다. 기본값이다. */
+            /* position: static; */
+
+            /* position: relative; */
+            /* 원래 있어야하는 자리에서 
+            left : 20px;
+            top : 20px;
+            만큼 옮겨 갈수 있다. */
+
+            /* position: fixed; */
+            /* 부모 box 기준에서 나와서 
+            페이지 기준으로 
+            lift : 20px;
+            top : 20px;  */
+
+            /* position: absolute; */
+            /* 부모 box 기준으로 
+            left: 20px;
+            top : 20px;
+            옮겨간 것 */
+
+            /* position: sticky; */
+            /* 화면을 내려도 그 위치가 고정되어 보이는 것 */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>1</div>
+        <div class="box"> box2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+    </div>
+    <!-- 포지션  -->
+
+
+</body>
+
+</html>

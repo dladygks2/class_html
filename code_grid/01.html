@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div는 블록속성으로 가로획을 다 차지한다. */
+        div {
+            border: 3px solid skyblue;
+            background-color: aliceblue;
+            height: 50px;
+            width: 50px;
+            /* 겉으로 보이는것은 위에 적은대로지만
+            실제로 그 획을 다 차지한다. */
+            /* display: inline; */
+            /* display: inline-block;을 해야 크기를 조절가능 */
+            /* display: inline-block; */
+            /* inline 속성은 크기를 정할 수 없고, 안에 입력되는 
+            것의 값만큼을 가질 수 있다. */
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>가</div>
+    <div>나</div>
+    <div>다</div>
+    <div>라</div>
+    <div>마</div>
+
+</body>
+
+</html>
