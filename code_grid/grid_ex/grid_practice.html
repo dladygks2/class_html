@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+
+            display: grid;
+            border: 10px solid #123;
+            grid-template-columns: auto 100px auto 150px auto auto;
+            grid-template-rows: 200px auto 300px;
+
+        }
+
+        .parent div {
+            color: #151;
+            text-align: left;
+            font-size: 20px;
+            background-color: thistle;
+            border: 2px solid #153;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- columns 10개 이상으로 만들어란다. -->
+    <div class="parent">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+</body>
+
+</html>

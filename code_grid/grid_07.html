@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            display: grid;
+            border: 5px solid #000;
+            background-color: deepskyblue;
+
+            grid-template-columns: auto auto auto;
+            column-gap: 10px;
+            row-gap: 10px;
+            /* gap: 10px; */
+            /* gap: 100px 100px; */
+
+            /* 자식요소를 수평으로 정렬하는 녀석 : justify-content */
+            /* justify-content: center; */
+
+            /* justify-content: start; : 기본값 : 아무런 정렬기능 X 왼쪽부터 */
+            /* justify-content: start; */
+
+            /* justify-content: end; */
+
+            /* justify-content: space-around;
+            : 자식요소를 수평으로 양쪽정렬하는것 */
+            /* justify-content: space-around; */
+
+
+
+            /* justify-content: space-between;
+             : 자식 요소를 수평으로 양쪽 정렬 
+             첫번째 column과 마지막 column은 여백없이 붙인다음
+             나머지 애들을 정렬하는 기능 */
+            /* justify-content: space-between; */
+
+
+
+            /* justify-content는 전체적으로??? */
+        }
+
+        .parent div {
+            color: #fff;
+            text-align: center;
+            font-size: 30px;
+            background-color: gold;
+            width: 100px;
+            padding: 20px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+
+    </div>
+</body>
+
+</html>
