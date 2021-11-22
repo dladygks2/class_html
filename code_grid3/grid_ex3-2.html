@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+    }
+
+    .parent {
+        border: 1px solid #000;
+        background-color: white;
+        display: grid;
+        height: 100vh;
+
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+
+        grid-template-areas:
+            'one two two'
+            'one five three'
+            'four four three'
+
+        ;
+
+    }
+
+    .parent div {
+        justify-items: center;
+        align-items: center;
+        color: #000;
+        display: grid;
+        /* padding: 2px; */
+        margin: 2px;
+
+        border: 1px solid #000;
+        background-color: khaki;
+
+
+    }
+
+    .one {
+        display: grid;
+        grid-area: one;
+        /* grid-area: one; */
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+
+        grid-template-areas:
+            'sub1 sub2'
+            'sub3 sub3'
+        ;
+
+    }
+
+    .two {
+        grid-area: two;
+    }
+
+    .three {
+        grid-area: three;
+    }
+
+    .four {
+        grid-area: four;
+    }
+
+    .five {
+        grid-area: five;
+    }
+
+    .one div {
+        background-color: gold;
+        color: green;
+        justify-self: stretch;
+        align-self: stretch;
+        font-size: 10px;
+    }
+
+    .one div:nth-child(1) {
+        grid-area: sub1;
+    }
+
+
+    .one div:nth-child(2) {
+        grid-area: sub2;
+    }
+
+    .one div:nth-child(3) {
+        grid-area: sub3;
+    }
+</style>
+
+<body>
+    <div class="parent">
+        <div class="one">
+            <div class="sub1">1</div>
+            <div class="sub2">2</div>
+            <div class="sub3">3</div>
+        </div>
+        <div class="two">two</div>
+        <div class="three">three</div>
+        <div class="four">four</div>
+        <div class="five">five</div>
+    </div>
+</body>
+
+</html>

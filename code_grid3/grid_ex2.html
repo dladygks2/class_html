@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* '*'은 전체에다가 선언하는 것이다. */
+    * {
+        margin: 0;
+        list-style: none;
+
+    }
+
+    .container {
+        display: grid;
+        border: 1px solid #000;
+        gap: 3px;
+        /* padding: 3px; */
+        background-color: khaki;
+
+        grid-template-areas:
+            'header header header header'
+            'nav nav nav nav'
+            'section section section aside'
+            'section section section aside'
+            'section section section aside'
+            'section section section aside'
+            'section section section aside'
+            'article article article aside'
+            'footer footer footer footer';
+
+        height: 100vh;
+    }
+
+    .container div {
+        text-align: center;
+        font-size: 30px;
+        border: 1px solid #000;
+
+    }
+
+    .header {
+        grid-area: header;
+        background-color: lavender;
+    }
+
+    .nav {
+        grid-area: nav;
+        background-color: lavender;
+    }
+
+    .section {
+        grid-area: section;
+        background-color: lawngreen;
+    }
+
+    .article {
+        grid-area: article;
+        background-color: lawngreen;
+    }
+
+    .aside {
+        grid-area: aside;
+        background-color: pink;
+
+    }
+
+    .footer {
+        grid-area: footer;
+        background-color: palevioletred;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <div class="header">header</div>
+        <div class="nav">nav</div>
+        <div class="section">section</div>
+        <div class="article">article</div>
+        <div class="aside">aside</div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            display: grid;
+            grid-template-columns: auto auto;
+
+            border: 5px solid #000;
+            width: 600px;
+            height: 200px;
+            /* 수평정렬 */
+
+            justify-items: center;
+            align-items: center;
+        }
+
+        .parent div {
+            color: #FFF;
+            text-align: center;
+            font-size: 30px;
+            background-color: hotpink;
+            width: 100px;
+            height: 100px;
+
+        }
+
+        .parent div:nth-child(2) {
+            /* 컬럼 내에서 수평정렬을 개별적으로 조절할 수 있다.
+            부모요소에서 지정한 것은 상관없다.
+
+
+            자식요소의 수직 수평 요소정렬은 부모요소의 수직 수평 요소정렬 값에 
+            상관없이 지정가능하다.
+
+
+            위에 괄호 안에 숫자가 순번인듯????
+            */
+
+            /* justify-self: end; */
+
+
+            /* 컬럼 내에서 수직정렬을 개별적으로 조절할 수 있다.
+                 */
+            align-self: end;
+            /* align-self: start; */
+            /* align-self: center; */
+
+        }
+
+        /* parent 위에보다 아래가 더 우선순위가 있다. */
+
+        /* 자식요소 (grid item) 
+        justify : 수평
+        align : 수직 
+        */
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div>1</div>
+        <div>2</div>
+    </div>
+</body>
+
+</html>
