@@ -8,9 +8,12 @@
     <title>Document</title>
     <style>
         .parent {
-            /* gridㅣlayout 을 사용하기 위해서  */
+            /* grid-layout 을 사용하기 위해서  */
+            /* display: grid; */
             display: inline-grid;
             border: 5px solid #000;
+            grid-template-columns: auto auto;
+            background-color: blue;
         }
 
         .parent div {
@@ -26,7 +29,7 @@
 
 <body>
 
-    <div class="parant">
+    <div class="parent">
         <div>1</div>
         <div>2</div>
         <div>3</div>

@@ -6,29 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .parent {
+            border: 5px solid #000;
+            background-color: khaki;
+            display: grid;
+            grid-template-areas: "item1 item1 . . .";
+
+        }
+
+
+        .parent div {
+            text-align: center;
+            font-size: 30px;
+            border: 1px solid #000;
+
+        }
+
+        .item {
+            background-color: crimson;
+            grid-area: item1;
+        }
+    </style>
 </head>
-<style>
-    .parent {
-        border: 5px solid #000;
-        background-color: khaki;
-        display: grid;
-        grid-template-areas: 'item1 item1 . . .';
 
-    }
-
-
-    .parent div {
-        text-align: center;
-        font-size: 30px;
-        border: 1px solid #000;
-
-    }
-
-    .parent div item {
-        background-color: crimson;
-        grid-area: item1;
-    }
-</style>
 
 <body>
     <div class="parent">
